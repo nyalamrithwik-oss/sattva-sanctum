@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/react";
 import { SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION, SITE_URL } from "@/lib/config";
 
 const cormorant = Cormorant_Garamond({
@@ -70,6 +71,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <WhatsAppButton />
         <ScrollToTop />
+        <Analytics />
       </body>
     </html>
   );
